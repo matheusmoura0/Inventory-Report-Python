@@ -25,3 +25,22 @@ class Product:
             f" até {self.data_de_validade}"
             f" precisa ser armazenado {self.instrucoes_de_armazenamento}."
         )
+
+
+def test_cria_produto():
+    produto = Product(
+        id=1,
+        nome_do_produto="Rapier",
+        nome_da_empresa="Dungeon",
+        data_de_fabricacao="01/01/2020",
+        data_de_validade="01/01/2021",
+        numero_de_serie="4521540540",
+        instrucoes_de_armazenamento="No bolso do rogue",
+    )
+    assert produto.id == 1
+    assert produto.nome_do_produto == "Rapier"
+    assert produto.nome_da_empresa == "Dungeon"
+    assert produto.data_de_fabricacao == "01/01/2020"
+    assert produto.data_de_validade == "01/01/2021"
+    assert produto.numero_de_serie == "4521540540"
+    assert produto.instrucoes_de_armazenamento == "No bolso do rogue"
