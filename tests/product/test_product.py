@@ -11,7 +11,7 @@ def test_cria_produto():
         "4521540540",
         "No bolso do ladino",
     )
-    assert id == 1
+    assert produto.id == 1
     assert produto.nome_do_produto == "Rapier"
     assert produto.nome_da_empresa == "Dungeon"
     assert produto.data_de_fabricacao == "01/01/2020"
